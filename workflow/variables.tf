@@ -10,7 +10,10 @@ variable "workflows" {
     filter = string
     filter_attribute        = string
     filter_operator         = string
-    filter_values           = list(string)
-    notification_channel_name = string
+   // filter_values           = list(string)
+   // notification_channel_name = string
   }))
+}
+variable "policy_id" {
+  type =string
 }

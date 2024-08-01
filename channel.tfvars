@@ -6,8 +6,7 @@ alert_channel = {
     product                       = "IINT"
     key_property ="subject"
     notification_subject          = "Browser Alert"
-    notification_custom_details   = "Custom details about the alert"
-    notification_destination_name = "browser-alert-destination"
+    //notification_custom_details   = "Custom details about the alert"
   }
 }
 

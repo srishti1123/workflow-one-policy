@@ -23,5 +23,6 @@ module "channel" {
 module "workflow" {
   source = "./workflow"
   channel_id = module.channel.channel_id
+  policy_id = module.browser-policy.policy_id
   workflows= var.workflows
 }

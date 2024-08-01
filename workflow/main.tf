@@ -11,7 +11,7 @@ resource "newrelic_workflow" "workflow" {
     predicate {
       attribute = each.value.filter_attribute
       operator  = each.value.filter_operator
-      values    = each.value.filter_values
+      values    = [var.policy_id]
     }
   }
 

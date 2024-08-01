@@ -10,7 +10,6 @@ variable "alert_channel" {
     product                     = string
     key_property = string
     notification_subject        = string
-    notification_custom_details = string
-    notification_destination_name = string
+    
   }))
 }

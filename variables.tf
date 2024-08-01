@@ -33,8 +33,8 @@ variable "alert_channel" {
     product                       = string
     key_property =string
     notification_subject          = string
-    notification_custom_details   = string
-    notification_destination_name = string
+    //notification_custom_details   = string
+    //notification_destination_name = string
   }))
 }
 
@@ -46,8 +46,7 @@ variable "workflows" {
     filter = string
     filter_attribute          = string
     filter_operator           = string
-    filter_values             = list(string)
-    notification_channel_name = string
+    //notification_channel_name = string
   }))
 }
 

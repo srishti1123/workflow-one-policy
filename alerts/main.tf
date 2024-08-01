@@ -3,8 +3,9 @@ resource "newrelic_alert_policy" "policies" {
   incident_preference = var.incident_preference
 }
 resource "newrelic_nrql_alert_condition" "conditions" {
-  for_each = var.alert_conditions
+  //for_each = var.alert_conditions
   policy_id                    = newrelic_alert_policy.policies.id
+  for_each = var.alert_conditions
   type                         = each.value.type
   name                         = each.value.name
   enabled                      = each.value.enabled
