@@ -43,40 +43,40 @@ browser-policy-conditions = {
   }
 }
 
-alert_destination = {
-  browser-alert-destination = {
-    account_id                    = 4438260
-    notification_destination_name = "browser-alert-destination"
-    notification_destination_type = "EMAIL"
-    key_destination               = "email"
-    notification_email            = "gsrishti111@gmail.com"
-  }
-}
+# alert_destination = {
+#   browser-alert-destination = {
+#     account_id                    = 4438260
+#     notification_destination_name = "browser-alert-destination"
+#     notification_destination_type = "EMAIL"
+#      key_destination               = "email"
+#     notification_email            = "gsrishti111@gmail.com"
+#   }
+# }
 
-alert_channel = {
-  browser-alert-channel = {
-    account_id                    = 4438260
-    notification_channel_name     = "browser-alert-channel"
-    notification_channel_type     = "EMAIL"
-    product                       = "IINT"
-    key_property ="subject"
-    notification_subject          = "Browser Alert"
-    notification_custom_details   = "Custom details about the alert"
-    notification_destination_name = "browser-alert-destination"
-  }
-}
+# alert_channel = {
+#   browser-alert-channel = {
+#     account_id                    = 4438260
+#     notification_channel_name     = "browser-alert-channel"
+#     notification_channel_type     = "EMAIL"
+#     product                       = "IINT"
+#     key_property ="subject"
+#     notification_subject          = "Browser Alert"
+#     notification_custom_details   = "Custom details about the alert"
+#     notification_destination_name = "browser-alert-destination"
+#   }
+# }
 
-workflows = {
-  browser-alert-workflows = {
-    name                      = "Browser Alert Workflow"
-    muting_rules_handling     = "NOTIFY_ALL_ISSUES"
-    filter_name               = " Filter-EXAMPLE"
-    filter =               "FILTER"
-    filter_attribute          = "accumulations.tag.team"
-    filter_operator           = "IS"
-    filter_values             = ["critical"]
-    notification_channel_name = "browser-alert-channel"
+# workflows = {
+#   browser-alert-workflows = {
+#     name                      = "Browser Alert Workflow"
+#     muting_rules_handling     = "NOTIFY_ALL_ISSUES"
+#     filter_name               = " Filter-EXAMPLE"
+#     filter =               "FILTER"
+#     filter_attribute          = "accumulations.tag.team"
+#     filter_operator           = "IS"
+#     filter_values             = ["critical"]
+#     notification_channel_name = "browser-alert-channel"
 
 
-  }
-}
+#   }
+# }

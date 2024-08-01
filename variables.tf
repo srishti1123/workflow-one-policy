@@ -50,3 +50,4 @@ variable "workflows" {
     notification_channel_name = string
   }))
 }
+
